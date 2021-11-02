@@ -33,6 +33,7 @@ context('Check_Payment_Saucedemo', () => {
         cy.get('[data-test=continue]').click()
     })
 
+    // Input firts name dan ZIP/Postal Code dengan benar
     it('test_case3_InputInformationWrongLastName', () => {
         cy.visit('https://www.saucedemo.com')
         cy.get('#user-name').type('standard_user')
@@ -51,7 +52,8 @@ context('Check_Payment_Saucedemo', () => {
         cy.get('[data-test=continue]').click()
 
     })
-
+   
+    // Input firts name dan last name dengan benar
     it('test_case4_InputInformationWrongInZIPCode', () => {
         cy.visit('https://www.saucedemo.com')
         cy.get('#user-name').type('standard_user')
@@ -70,6 +72,7 @@ context('Check_Payment_Saucedemo', () => {
         cy.get('[data-test=continue]').click()
     })
 
+    //klik tombol Continue
     it('test_case5_ClickContinueButton', () => {
         cy.visit('https://www.saucedemo.com')
         cy.get('#user-name').type('standard_user')
